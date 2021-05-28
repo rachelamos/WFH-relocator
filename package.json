@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/rachelamos/WFH-relocator/issues"
   },
-  "homepage": "https://github.com/rachelamos/WFH-relocator#readme"
+  "homepage": "https://github.com/rachelamos/WFH-relocator#readme",
+  "dependencies": {
+    "mongoose": "^5.12.11"
+  }
 }
