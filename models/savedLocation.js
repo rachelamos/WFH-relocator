@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const locationSchema = new Schema({
+const savedLocationSchema = new Schema({
 
     city: {
         type: String,
@@ -26,10 +26,13 @@ const locationSchema = new Schema({
     },
     costOfLiving: {
         type: String
+    },
+    userID: {
+        type: Number
     }
 
 });
 
-const Location = mongoose.model("Location", locationSchema );
+const SavedLocation = mongoose.model("SavedLocation", savedLocationSchema );
 
-module.exports = Location;
+module.exports = SavedLocation;
