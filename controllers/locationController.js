@@ -2,7 +2,7 @@ const db = require("../models");
 
 module.exports = {
     findByID: function(req, res) {
-        db.Location.findByID(req.params.id)
+        db.Location.findById(req.params.id)
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
     },
