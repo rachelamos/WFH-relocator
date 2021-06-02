@@ -1,4 +1,4 @@
-const cityBroadbandData = [
+const cityData = [
   {
       city: 'Atlanta',
       state: 'GA',
@@ -6,6 +6,7 @@ const cityBroadbandData = [
       planCount: 31,
       topSpeed: 2000,
       avgPrice: 80.31,
+      costOfLiving: 64.98
     },
 
     {
@@ -15,6 +16,7 @@ const cityBroadbandData = [
       planCount: 35,
       topSpeed: 2000,
       avgPrice: 56.87,
+      costOfLiving: 63.04
     },
 
     {
@@ -24,6 +26,7 @@ const cityBroadbandData = [
       planCount: 15,
       topSpeed: 1000,
       avgPrice: 54.65,
+      costOfLiving: 73.33
     },
 
     {
@@ -33,6 +36,7 @@ const cityBroadbandData = [
       planCount: 20,
       topSpeed: 2000,
       avgPrice: 68.49,
+      costOfLiving: 89.29
     },
 
     {
@@ -42,6 +46,7 @@ const cityBroadbandData = [
       planCount: 28,
       topSpeed: 2000,
       avgPrice: 62.67,
+      costOfLiving: 72.66
     },
 
     {
@@ -51,6 +56,7 @@ const cityBroadbandData = [
       planCount: 27,
       topSpeed: 1200,
       avgPrice: 50.79,
+      costOfLiving: 80.38
     },
 
     {
@@ -60,6 +66,7 @@ const cityBroadbandData = [
       planCount: 20,
       topSpeed: 1000,
       avgPrice: 59.98,
+      costOfLiving: 73.90
     },
 
     {
@@ -69,6 +76,7 @@ const cityBroadbandData = [
       planCount: 20,
       topSpeed: 1000,
       avgPrice: 59.98,
+      costOfLiving: 73.13
     },
 
     {
@@ -78,6 +86,7 @@ const cityBroadbandData = [
       planCount: 41,
       topSpeed: 1000,
       avgPrice: 55.50,
+      costOfLiving: 64.80
     },
 
     {
@@ -86,7 +95,8 @@ const cityBroadbandData = [
       providerCount: 41,
       planCount: 16,
       topSpeed: 1200,
-      avgPrice: 53.81
+      avgPrice: 53.81,
+      costOfLiving: 73.96
     },
 
     {
@@ -96,6 +106,7 @@ const cityBroadbandData = [
       planCount: 21,
       topSpeed: 10000,
       avgPrice: 58.31,
+      costOfLiving: 69.73
     },
 
     {
@@ -105,6 +116,7 @@ const cityBroadbandData = [
       planCount: 28,
       topSpeed: 2000,
       avgPrice: 59.70,
+      costOfLiving: 64.98
     },
 
     {
@@ -114,6 +126,7 @@ const cityBroadbandData = [
       planCount: 37,
       topSpeed: 2000,
       avgPrice: 59.18,
+      costOfLiving: 68.86
     },
 
     {
@@ -123,6 +136,7 @@ const cityBroadbandData = [
       planCount: 32,
       topSpeed: 1000,
       avgPrice: 56.17,
+      costOfLiving: 81.92
     },
 
     {
@@ -132,6 +146,7 @@ const cityBroadbandData = [
       planCount: 22,
       topSpeed: 1000,
       avgPrice: 60.33,
+      costOfLiving: 68.69
     },
 
     {
@@ -141,6 +156,7 @@ const cityBroadbandData = [
       planCount: 28,
       topSpeed: 10000,
       avgPrice: 58.60,
+      costOfLiving: 82.47
     },
 
     {
@@ -150,6 +166,7 @@ const cityBroadbandData = [
       planCount: 18,
       topSpeed: 2000,
       avgPrice: 60.81,
+      costOfLiving: 72.15
     },
 
     {
@@ -159,6 +176,7 @@ const cityBroadbandData = [
       planCount: 17,
       topSpeed: 1000,
       avgPrice: 55.48,
+      costOfLiving: 100
     },
 
     {
@@ -168,6 +186,7 @@ const cityBroadbandData = [
       planCount: 15,
       topSpeed: 1000,
       avgPrice: 52.19,
+      costOfLiving: 66.73
     },
 
     {
@@ -177,6 +196,7 @@ const cityBroadbandData = [
       planCount: 22,
       topSpeed: 2000,
       avgPrice: 62.75,
+      costOfLiving: 71.18
     },
 
     {
@@ -186,6 +206,7 @@ const cityBroadbandData = [
       planCount: 20,
       topSpeed: 1000,
       avgPrice: 68.23,
+      costOfLiving: 63.89
     },
 
     {
@@ -195,6 +216,7 @@ const cityBroadbandData = [
       planCount: 31,
       topSpeed: 10000,
       avgPrice: 53.21,
+      costOfLiving: 93.35
     },
 
     {
@@ -204,6 +226,7 @@ const cityBroadbandData = [
       planCount: 36,
       topSpeed: 2000,
       avgPrice: 55.84,
+      costOfLiving: 78.55
     },
 
     {
@@ -213,6 +236,7 @@ const cityBroadbandData = [
       planCount: 21,
       topSpeed: 1200,
       avgPrice: 45.22,
+      costOfLiving: 89.48
     },
 
     {
@@ -222,6 +246,7 @@ const cityBroadbandData = [
       planCount: 16,
       topSpeed: 1000,
       avgPrice: 63.10,
+      costOfLiving: 68.23
     },
 
     {
@@ -231,6 +256,7 @@ const cityBroadbandData = [
       planCount: 26,
       topSpeed: 1200,
       avgPrice: 83.37,
+      costOfLiving: 79.53
     },
 
     {
@@ -240,6 +266,7 @@ const cityBroadbandData = [
       planCount: 14,
       topSpeed: 1000,
       avgPrice: 53.06,
+      costOfLiving: 84.39
     }
 
 ]
