@@ -7,7 +7,7 @@ module.exports = {
             .catch(err => res.status(422).json(err));
     },
     findByCity: function(req, res) {
-        db.Location.findByID(req.params.city)
+        db.Location.findOne({ city: req.params.city }, req.body)
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
     }
