@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/rachelamos/WFH-relocator#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "mongoose": "^5.12.11"
   }
 }
