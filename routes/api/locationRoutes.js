@@ -6,7 +6,7 @@ router
     .get(locationController.findByID);
 
 router
-    .route("/:city")
+    .route("/city/:city")
     .get(locationController.findByCity);
 
 module.exports = router;
