@@ -14,8 +14,14 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(routes);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/wfhrdb");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/wfhrdb",
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
+        useFindAndModify: false
+    });
 
-app.listen(PORT, function() {
-    console.log( `Server now listening on PORT ${PORT}!`);
+app.listen(PORT, function () {
+    console.log(`Server now listening on PORT ${PORT}!`);
 });
