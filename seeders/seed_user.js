@@ -1,5 +1,12 @@
 const { User } = require('../models');
 
+const mongoose = require("mongoose");
+const db = require("../models")
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/wfhrdb", {
+  useNewUrlParser: true
+});
+
 const userData = [
   {
     username: 'bandreae',

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "seed": "node seeders/seed_user.js && node seeders/seed.js"
+    "seed": "node seeders/seed_user.js && node seeders/seed.js",
+    "install": "cd client && npm install"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/rachelamos/WFH-relocator#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.12.11"
+    "mongoose": "^5.12.11",
+    "recharts": "^2.0.9"
   }
 }
