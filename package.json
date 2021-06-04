@@ -1,7 +1,7 @@
 {
   "name": "WFH-relocator",
   "version": "1.0.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "An app to help you relocate to the city that best suits your needs in the age of Working From Home",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -20,7 +20,10 @@
     "nodemon": "^1.18.7"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "if-env": "^1.0.4",
     "mongoose": "^5.12.11",
     "recharts": "^2.0.9"
   }
