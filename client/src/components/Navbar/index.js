@@ -13,7 +13,14 @@ function Nav() {
                     className="d-inline-block align-top"
                 />{' '} */}
                 WFH-Relocator
-            </Navbar.Brand>
+                </Navbar.Brand>
+                <Navbar.Toggle />
+                <Navbar.Collapse className="justify-content-end">
+                    <Navbar.Text>
+                        Welcome <a href="#login">Mark Otto!</a>
+                    </Navbar.Text>
+                </Navbar.Collapse>
+            
         </Navbar>
     )
 }
