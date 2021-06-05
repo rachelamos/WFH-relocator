@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './Rechart.css';
+import './index.css';
 // import "./styles.css";
 import React from "react";
 import {

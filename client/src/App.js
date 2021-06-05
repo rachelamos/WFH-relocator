@@ -1,5 +1,5 @@
 import React from 'react';
-import Chart from './components/Rechart/Rechart';
+import Chart from './components/Rechart';
 import Nav from './components/Navbar';
 
 function App () {
