@@ -13,6 +13,8 @@ import {
   Legend
 } from "recharts";
 
+// import COLData from "../../../scripts/seed_citybb";
+
 const data = [
   {
     name: "San Francisco, CA",
