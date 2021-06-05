@@ -1,9 +1,13 @@
 import React from 'react';
 import Chart from './components/Rechart/Rechart';
+import Nav from './components/Navbar';
 
 function App () {
   return (
-    <Chart></Chart>
+    <div>
+      <Nav></Nav>
+      <Chart></Chart>
+    </div>
   )
 }
 
