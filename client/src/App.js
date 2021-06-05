@@ -1,5 +1,5 @@
 import React from 'react';
-import Chart from './pages/Rechart';
+import Chart from './components/Rechart/Rechart';
 
 function App () {
   return (

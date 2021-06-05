@@ -13,7 +13,7 @@ import {
   Legend
 } from "recharts";
 
-import COLData from "../../../scripts/seed_citybb";
+// import COLData from "../../../scripts/seed_citybb";
 
 const data = [
   {
