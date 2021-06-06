@@ -27,6 +27,7 @@
     "if-env": "^1.0.4",
     "mongoose": "^5.12.11",
     "react-bootstrap": "^1.6.1",
+    "react-router-dom": "^5.2.0",
     "recharts": "^2.0.9"
   }
 }
