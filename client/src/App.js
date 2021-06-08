@@ -1,7 +1,7 @@
 import React from 'react';
 import Chart from './components/Rechart/Rechart';
 import Nav from './components/Navbar';
-import Login from './components/Auth/login'
+import LoginPage from './components/Auth/loginpage'
 import Signup from './components/Auth/Signup'
 
 function App () {
