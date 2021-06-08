@@ -1,9 +1,11 @@
 import React from 'react';
 import { Input, FormBtn } from '../components/Form';
+import Example from '../components/Signup';
 
 function Login() {
-    return (
-        <form>
+  return (
+    <div>
+      <form>
         <Input
           onChange="{}"
           name="username"
@@ -20,8 +22,11 @@ function Login() {
         >
           Login!
         </FormBtn>
+
       </form>
-    )
+      <Example />
+    </div>
+  )
 }
 
 export default Login;
