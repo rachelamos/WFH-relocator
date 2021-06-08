@@ -19,14 +19,10 @@
 
 import { render } from "react-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ReactDOM from "react-dom";
+import { Auth0Provider } from '@auth0/auth0-react';
 
 import App from "./App";
 
 const rootElement = document.getElementById("root");
 render(<App />, rootElement);
-
-=======
-import React from "react";
-import ReactDOM from "react-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
->>>>>>> 4051e13f30908d6c141ed5d0f5e486259b0e0bfc
