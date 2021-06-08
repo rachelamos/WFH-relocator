@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Chart from '../components/Rechart';
 import Nav from '../components/Navbar';
 import API from "../utils/API";
+import CityWindow from "../components/CityWindow";
 
 import { Input, SearchBtn } from "../components/SearchForm";
 /*
@@ -18,6 +19,8 @@ function SearchPage() {
         console.log("formObject", formObject)
         API.getCity(formObject)
           .then(res => setSearchResults(res.data))
+          .then(console.log(searchResults))
+          .then(console.log(searchResults.costOfLiving))
           .catch(err => console.log(err));
       };
 
@@ -34,6 +37,15 @@ function SearchPage() {
             <SearchBtn
                 onClick={citySearch}
             />
+            <CityWindow
+                city={searchResults.city}
+                state={searchResults.state}
+                providerCount={searchResults.providerCount}
+                planCount={searchResults.planCount}
+                topSpeed={searchResults.topSpeed}
+                avgPrice={searchResults.avgPrice}
+                costOfLiving={searchResults.costOfLiving}
+                ></CityWindow>
             <h3>Saved Searches</h3>
             {/* <Dropdown></Dropdown> */}
         </div>
