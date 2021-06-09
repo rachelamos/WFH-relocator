@@ -2,8 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Chart from './components/Rechart';
 import Nav from './components/Navbar';
-import Loginpage from './components/Auth/Loginpage'
-import Signup from './components/Auth/Signup'
 import Login from './pages/Login';
 import SearchPage from './pages/SearchPage';
 
