@@ -6,7 +6,6 @@ import CityWindow from "../components/CityWindow";
 
 import { Input, SearchBtn } from "../components/SearchForm";
 import CityDropdown from "../components/CityDropdown";
-import CityPuller from "../components/CityPuller";
 
 /*
 additional components to be imported

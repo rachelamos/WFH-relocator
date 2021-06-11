@@ -1,43 +1,35 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 import API from "../utils/API";
-import CityPuller from "./CityPuller"
 
-class CityDropdown extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { cities: [] };
-    }
+function CityDropdown() {
 
-        componentDidMount() {
-            let initialCities = [];
-            API.getLocations()
-                .then(response => {
-                    return response.json();
-                }).then(data => {
-                    initialCities = data.results.map((city) => {
-                        return city
-                });
-                console.log("initialCities: ", initialCities);
-                this.setState({
-                    cities: initialCities,
-                });
-            });
-        }
+    const [selectableLocations, setSelectableLocations] = useState([])
 
-    render() {
+    useEffect(() => {
+        loadLocations()
+    }, [])
 
+    function loadLocations() {
+        API.getLocations()
+            .then(res =>
+                setSelectableLocations(res.data)
+                )
+                .then(console.log("list:", selectableLocations))
+                .catch(err => console.log(err));
+    };
 
+    let optionItems = selectableLocations.map((selectableLocation => <option key={selectableLocation.city}>{selectableLocation.city}</option>))
 
         return (
 
             <div>
                 <select>
-                    {}
+                    {optionItems}
                 </select>
             </div>
         )
     }
-}
+
 
 export default CityDropdown;
