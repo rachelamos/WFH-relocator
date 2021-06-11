@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default {
     getLocations: function() {
-        return axios.get("api/locations")
+        return axios.get("api/locations/")
     },
 
     getCity: function(cityName) {

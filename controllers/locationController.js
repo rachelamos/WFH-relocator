@@ -11,6 +11,14 @@ module.exports = {
         db.Location.findOne(req.params)
             .then(dbLocation => res.json(dbLocation))
             .catch(err => res.status(422).json(err));
+    },
+
+    findAll: function(req, res) {
+        db.Location
+            .find(req.query)
+            .sort({ city: 1 })
+            .then(dbLocation => res.json(dbLocation))
+            .catch(err => res.status(422).json(err));
     }
 
 

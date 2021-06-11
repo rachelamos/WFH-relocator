@@ -4,10 +4,21 @@ class CityWindow extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {};
       }
 
+
     render() {
+
+        // console.log(hasSearched);
+        // const hasSearched = this.props.hasSearched;
+        // console.log(hasSearched);
+
+    //     if (!hasSearched) {
+    //         return null
+    //     }
+
+    // else return(
+
     return(
     <div className="border">
         <strong>City: <span className="city-name">{this.props.city}</span></strong>
@@ -23,6 +34,7 @@ class CityWindow extends React.Component {
         <strong>Avg plan price: <span className="avgPrice"></span>${this.props.avgPrice}</strong>
         <br></br>
         <strong>Cost-of-living index: <span className="costOfLiving">{this.props.costOfLiving}</span></strong>
+    
     </div>
     )
 }
