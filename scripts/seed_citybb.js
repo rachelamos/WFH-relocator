@@ -370,4 +370,4 @@ db.Location.deleteMany({})
     process.exit(1);
   });
 
-export default cityBroadbandData;
+// export default cityBroadbandData;

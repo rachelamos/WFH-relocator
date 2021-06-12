@@ -3,6 +3,8 @@ import React from "react";
 import {
   ResponsiveContainer,
   BarChart,
+  // ComposedChart,
+  // Line,
   Bar,
   XAxis,
   YAxis,
@@ -36,9 +38,12 @@ function Chart(props) {
       <YAxis />
       <Tooltip />
       <Legend />
-      <Bar dataKey="costOfLiving" fill="#8884d8" />
-      <Bar dataKey="providerCount" fill="#84add8" />
-      <Bar dataKey="avgPrice" fill="#aa84d8" />
+      <Bar dataKey="costOfLiving" stackId="a" fill="#8884d8" />
+      <Bar dataKey="avgCostOfLiving" stackId="a" fill="#d4d844" />
+      <Bar dataKey="providerCount" stackId="b" fill="#84add8" />
+      <Bar dataKey="avgProviderCount" stackId="b" fill="#d8af84" />
+      <Bar dataKey="avgPrice" stackId="c" fill="#aa84d8" />
+      <Bar dataKey="avgAvgPrice" stackId="c" fill="#b2d884" />
     </BarChart>
     </ResponsiveContainer>
   );
