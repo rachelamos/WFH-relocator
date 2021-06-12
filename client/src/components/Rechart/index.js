@@ -37,6 +37,8 @@ function Chart(props) {
       <Tooltip />
       <Legend />
       <Bar dataKey="costOfLiving" fill="#8884d8" />
+      <Bar dataKey="providerCount" fill="#84add8" />
+      <Bar dataKey="avgPrice" fill="#aa84d8" />
     </BarChart>
     </ResponsiveContainer>
   );
