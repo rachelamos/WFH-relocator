@@ -16,6 +16,7 @@ function SearchPage() {
     const [formObject, setFormObject] = useState("");
     const [searchResults, setSearchResults] = useState({});
     const [hasSearched, setHasSearched] = useState(false);
+    const [selectedCity, setSelectedCity] = useState("");
 
     console.log("Searched yet?", hasSearched);
 
@@ -32,6 +33,16 @@ function SearchPage() {
           .catch(err => console.log(err));
       };
 
+    function selectCity() {
+        console.log("selectedCity: ", selectedCity)
+        API.getCity(selectedCity)
+            .then(res => setSelectedCity(res.data))
+            .then(setHasSearched(true))
+            .then(console.log(selectedCity))
+            .then(console.log("Selected yet?", hasSearched))
+            .catch(err => console.log(err));
+    }
+
 
     return (
         <div>
@@ -40,7 +51,9 @@ function SearchPage() {
             {/* <Welcome></Welcome> */}
             <h3>Select a city to view info</h3>
             <div id="dd-div">
-                <CityDropdown />
+                <CityDropdown 
+                        onChange={CityDropdown.handleChange && selectCity}
+                    />
             </div>
             <h3>Search cities</h3>
             <Input
@@ -50,7 +63,7 @@ function SearchPage() {
                 onClick={citySearch}
             />
             <CityWindow
-                city={searchResults.city}
+                city={searchResults.city || selectedCity.city}
                 state={searchResults.state}
                 providerCount={searchResults.providerCount}
                 planCount={searchResults.planCount}
