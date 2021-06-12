@@ -9,4 +9,8 @@ router
     .route("/city/:city")
     .get(locationController.findByCity);
 
+router
+    .route("/")
+    .get(locationController.findAll);
+
 module.exports = router;
