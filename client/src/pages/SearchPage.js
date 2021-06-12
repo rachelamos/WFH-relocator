@@ -40,7 +40,9 @@ function SearchPage() {
             <SearchBtn
                 onClick={citySearch}
             />
-            <CityWindow
+            {searchResults.costOfLiving ? (
+                <div>
+                <CityWindow
                 city={searchResults.city}
                 state={searchResults.state}
                 providerCount={searchResults.providerCount}
@@ -52,6 +54,20 @@ function SearchPage() {
             <Chart
                 info={searchResults}    
             ></Chart>
+            </div>
+            ) : (<h4>Search a city to see results</h4>)}
+            {/* <CityWindow
+                city={searchResults.city}
+                state={searchResults.state}
+                providerCount={searchResults.providerCount}
+                planCount={searchResults.planCount}
+                topSpeed={searchResults.topSpeed}
+                avgPrice={searchResults.avgPrice}
+                costOfLiving={searchResults.costOfLiving}
+            ></CityWindow> */}
+            {/* <Chart
+                info={searchResults}    
+            ></Chart> */}
             <h3>Saved Searches</h3>
         </div>
     );
