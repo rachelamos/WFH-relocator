@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Chart from '../components/Rechart';
-import Nav from '../components/Navbar';
+// import Nav from '../components/Navbar';
 import API from "../utils/API";
 import CityWindow from "../components/CityWindow";
 
@@ -14,6 +14,7 @@ additional components to be imported
 function SearchPage() {
 
     const [formObject, setFormObject] = useState("");
+    // const [searchResults, setSearchResults] = useState([]);
     const [searchResults, setSearchResults] = useState({});
     const [hasSearched, setHasSearched] = useState(false);
 
@@ -31,6 +32,11 @@ function SearchPage() {
           .then(console.log("Searched yet?", hasSearched))
           .catch(err => console.log(err));
       };
+
+    //   const cityData = searchResults.map(stats => {
+    //       let stat = { name: "name", costOfLiving: parseInt(stats.costOfLiving)}
+    //       return stat;
+    //   })
 
 
     return (
@@ -57,7 +63,10 @@ function SearchPage() {
                 topSpeed={searchResults.topSpeed}
                 avgPrice={searchResults.avgPrice}
                 costOfLiving={searchResults.costOfLiving}
-                ></CityWindow>
+            ></CityWindow>
+            <Chart
+                info={searchResults}    
+            ></Chart>
             <h3>Saved Searches</h3>
             {/* <Dropdown></Dropdown> */}
         </div>
