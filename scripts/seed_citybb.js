@@ -13,7 +13,10 @@ const cityBroadbandData = [
       planCount: 31,
       topSpeed: 2000,
       avgPrice: 80.31,
-      costOfLiving: 76.22
+      costOfLiving: 76.22,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -23,7 +26,10 @@ const cityBroadbandData = [
       planCount: 35,
       topSpeed: 2000,
       avgPrice: 56.87,
-      costOfLiving: 63.04
+      costOfLiving: 63.04,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -33,7 +39,10 @@ const cityBroadbandData = [
       planCount: 15,
       topSpeed: 1000,
       avgPrice: 54.65,
-      costOfLiving: 73.33
+      costOfLiving: 73.33,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -43,7 +52,10 @@ const cityBroadbandData = [
       planCount: 20,
       topSpeed: 2000,
       avgPrice: 68.49,
-      costOfLiving: 89.29
+      costOfLiving: 89.29,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -53,7 +65,10 @@ const cityBroadbandData = [
       planCount: 28,
       topSpeed: 2000,
       avgPrice: 62.67,
-      costOfLiving: 72.66
+      costOfLiving: 72.66,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -63,7 +78,10 @@ const cityBroadbandData = [
       planCount: 27,
       topSpeed: 1200,
       avgPrice: 50.79,
-      costOfLiving: 80.38
+      costOfLiving: 80.38,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -73,7 +91,10 @@ const cityBroadbandData = [
       planCount: 20,
       topSpeed: 1000,
       avgPrice: 59.98,
-      costOfLiving: 73.90
+      costOfLiving: 73.90,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -83,7 +104,10 @@ const cityBroadbandData = [
       planCount: 20,
       topSpeed: 1000,
       avgPrice: 59.98,
-      costOfLiving: 73.13
+      costOfLiving: 73.13,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -93,7 +117,10 @@ const cityBroadbandData = [
       planCount: 41,
       topSpeed: 1000,
       avgPrice: 55.50,
-      costOfLiving: 64.80
+      costOfLiving: 64.80,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -103,7 +130,10 @@ const cityBroadbandData = [
       planCount: 16,
       topSpeed: 1200,
       avgPrice: 53.81,
-      costOfLiving: 73.96
+      costOfLiving: 73.96,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -113,7 +143,10 @@ const cityBroadbandData = [
       planCount: 21,
       topSpeed: 10000,
       avgPrice: 58.31,
-      costOfLiving: 69.73
+      costOfLiving: 69.73,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -123,7 +156,10 @@ const cityBroadbandData = [
       planCount: 28,
       topSpeed: 2000,
       avgPrice: 59.70,
-      costOfLiving: 64.98
+      costOfLiving: 64.98,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -133,7 +169,10 @@ const cityBroadbandData = [
       planCount: 37,
       topSpeed: 2000,
       avgPrice: 59.18,
-      costOfLiving: 68.86
+      costOfLiving: 68.86,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -143,7 +182,10 @@ const cityBroadbandData = [
       planCount: 32,
       topSpeed: 1000,
       avgPrice: 56.17,
-      costOfLiving: 81.92
+      costOfLiving: 81.92,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -153,7 +195,10 @@ const cityBroadbandData = [
       planCount: 22,
       topSpeed: 1000,
       avgPrice: 60.33,
-      costOfLiving: 68.69
+      costOfLiving: 68.69,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -163,7 +208,10 @@ const cityBroadbandData = [
       planCount: 28,
       topSpeed: 10000,
       avgPrice: 58.60,
-      costOfLiving: 82.47
+      costOfLiving: 82.47,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -173,7 +221,10 @@ const cityBroadbandData = [
       planCount: 18,
       topSpeed: 2000,
       avgPrice: 60.81,
-      costOfLiving: 72.15
+      costOfLiving: 72.15,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -183,7 +234,10 @@ const cityBroadbandData = [
       planCount: 17,
       topSpeed: 1000,
       avgPrice: 55.48,
-      costOfLiving: 100
+      costOfLiving: 100,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -193,7 +247,10 @@ const cityBroadbandData = [
       planCount: 15,
       topSpeed: 1000,
       avgPrice: 52.19,
-      costOfLiving: 66.73
+      costOfLiving: 66.73,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -203,7 +260,10 @@ const cityBroadbandData = [
       planCount: 22,
       topSpeed: 2000,
       avgPrice: 62.75,
-      costOfLiving: 71.18
+      costOfLiving: 71.18,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -213,7 +273,10 @@ const cityBroadbandData = [
       planCount: 20,
       topSpeed: 1000,
       avgPrice: 68.23,
-      costOfLiving: 63.89
+      costOfLiving: 63.89,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -223,7 +286,10 @@ const cityBroadbandData = [
       planCount: 31,
       topSpeed: 10000,
       avgPrice: 53.21,
-      costOfLiving: 93.35
+      costOfLiving: 93.35,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -233,7 +299,10 @@ const cityBroadbandData = [
       planCount: 36,
       topSpeed: 2000,
       avgPrice: 55.84,
-      costOfLiving: 78.55
+      costOfLiving: 78.55,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -243,7 +312,10 @@ const cityBroadbandData = [
       planCount: 21,
       topSpeed: 1200,
       avgPrice: 45.22,
-      costOfLiving: 89.48
+      costOfLiving: 89.48,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -253,7 +325,10 @@ const cityBroadbandData = [
       planCount: 16,
       topSpeed: 1000,
       avgPrice: 63.10,
-      costOfLiving: 68.23
+      costOfLiving: 68.23,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -263,7 +338,10 @@ const cityBroadbandData = [
       planCount: 26,
       topSpeed: 1200,
       avgPrice: 83.37,
-      costOfLiving: 79.53
+      costOfLiving: 79.53,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     },
 
     {
@@ -273,7 +351,10 @@ const cityBroadbandData = [
       planCount: 14,
       topSpeed: 1000,
       avgPrice: 53.06,
-      costOfLiving: 84.39
+      costOfLiving: 84.39,
+      avgProviderCount: 34.26,
+      avgAvgPrice: 59.60,
+      avgCostOfLiving: 75.74
     }
 
 ]
