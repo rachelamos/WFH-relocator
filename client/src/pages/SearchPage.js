@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Chart from '../components/Rechart';
-// import Nav from '../components/Navbar';
 import API from "../utils/API";
 import CityWindow from "../components/CityWindow";
 
 import { Input, SearchBtn } from "../components/SearchForm";
 import CityDropdown from "../components/CityDropdown";
-
-/*
-additional components to be imported
-*/
 
 function SearchPage() {
 
@@ -19,8 +14,6 @@ function SearchPage() {
     const [hasSearched, setHasSearched] = useState(false);
 
     console.log("Searched yet?", hasSearched);
-
-
 
     function citySearch() {
         console.log("formObject", formObject)
@@ -33,17 +26,9 @@ function SearchPage() {
           .catch(err => console.log(err));
       };
 
-    //   const cityData = searchResults.map(stats => {
-    //       let stat = { name: "name", costOfLiving: parseInt(stats.costOfLiving)}
-    //       return stat;
-    //   })
-
 
     return (
         <div>
-            {/* <Nav></Nav> */}
-            {/* <Chart></Chart> */}
-            {/* <Welcome></Welcome> */}
             <h3>Select a city to view info</h3>
             <div id="dd-div">
                 <CityDropdown />
@@ -68,7 +53,6 @@ function SearchPage() {
                 info={searchResults}    
             ></Chart>
             <h3>Saved Searches</h3>
-            {/* <Dropdown></Dropdown> */}
         </div>
     );
 
