@@ -12,8 +12,5 @@ module.exports = {
             .then(dbLocation => res.json(dbLocation))
             .catch(err => res.status(422).json(err));
     }
-
-
-    
     //methods to save and remove locations pending
 };

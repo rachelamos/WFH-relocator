@@ -288,3 +288,5 @@ db.Location.deleteMany({})
     console.error(err);
     process.exit(1);
   });
+
+export default cityBroadbandData;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Chart from './components/Rechart';
+// import Chart from './components/Rechart';
 import Nav from './components/Navbar';
 import Login from './pages/Login';
 import SearchPage from './pages/SearchPage';
@@ -16,7 +16,7 @@ function App () {
         </Route>
         <Route exact path={"/location"}>
           <SearchPage />
-          <Chart />
+          {/* <Chart /> */}
         </Route>
       </Switch>
     </div>
