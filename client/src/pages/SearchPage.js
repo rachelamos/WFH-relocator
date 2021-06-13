@@ -26,7 +26,6 @@ function SearchPage() {
           .catch(err => console.log(err));
       };
 
-
     return (
         <div>
             <h3>Select a city to view info</h3>
@@ -56,18 +55,6 @@ function SearchPage() {
             ></Chart>
             </div>
             ) : (<h4>Search a city to see results</h4>)}
-            {/* <CityWindow
-                city={searchResults.city}
-                state={searchResults.state}
-                providerCount={searchResults.providerCount}
-                planCount={searchResults.planCount}
-                topSpeed={searchResults.topSpeed}
-                avgPrice={searchResults.avgPrice}
-                costOfLiving={searchResults.costOfLiving}
-            ></CityWindow> */}
-            {/* <Chart
-                info={searchResults}    
-            ></Chart> */}
             <h3>Saved Searches</h3>
         </div>
     );
