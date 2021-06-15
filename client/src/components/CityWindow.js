@@ -20,7 +20,7 @@ class CityWindow extends React.Component {
     // else return(
 
     return(
-    <div className="border">
+    <div className="card-body">
         <strong>City: <span className="city-name">{this.props.city}</span></strong>
         <br></br>
         <strong>State: <span>{this.props.state}</span></strong>
