@@ -20,6 +20,7 @@ function CityDropdown() {
     };
 
     let optionItems = selectableLocations.map((selectableLocation => <option key={selectableLocation.city}>{selectableLocation.city}</option>))
+    console.log("options", optionItems);
 
         return (
 

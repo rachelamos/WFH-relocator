@@ -3,14 +3,14 @@ import React from "react";
 export function Input(props) {
     return (
         <div className="form-comp">
-            <input className="form-control" {...props} />
+            <input className="form-control" placeholder="Enter city" {...props} />
         </div>
     );
 }
 
 export function SearchBtn(props) {
     return (
-        <button {...props}>
+        <button className="btn btn-primary btn-md" {...props}>
             Search
         </button>
     )

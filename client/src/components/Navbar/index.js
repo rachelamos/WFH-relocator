@@ -17,7 +17,7 @@ function Nav() {
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
                     <Navbar.Text>
-                        Welcome <a href="#login">Mark Otto!</a>
+                        Welcome! <a href="#login"></a>
                     </Navbar.Text>
                 </Navbar.Collapse>
             

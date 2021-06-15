@@ -3,8 +3,9 @@ import Chart from '../components/Rechart';
 import API from "../utils/API";
 import CityWindow from "../components/CityWindow";
 
+
 import { Input, SearchBtn } from "../components/SearchForm";
-import CityDropdown from "../components/CityDropdown";
+// import CityDropdown from "../components/CityDropdown";
 
 function SearchPage() {
 
@@ -27,20 +28,24 @@ function SearchPage() {
       };
 
     return (
-        <div>
-            <h3>Select a city to view info</h3>
+        <div className="container">
+            {/* <h3>Select a city to view info</h3>
             <div id="dd-div">
                 <CityDropdown />
-            </div>
-            <h3>Search cities</h3>
+            </div> */}
+            <h3>Search a city to view info.</h3>
+            
             <Input
                 onChange={(e) => setFormObject(e.target.value)}
             />
+            <div>
             <SearchBtn
                 onClick={citySearch}
             />
+           </div>
             {searchResults.costOfLiving ? (
-                <div>
+                <div className="card mb-4">
+                     
                 <CityWindow
                 city={searchResults.city}
                 state={searchResults.state}
@@ -54,8 +59,8 @@ function SearchPage() {
                 info={searchResults}    
             ></Chart>
             </div>
-            ) : (<h4>Search a city to see results</h4>)}
-            <h3>Saved Searches</h3>
+            ) : (<h4></h4>)}
+            {/* <h3>Saved Searches</h3> */}
         </div>
     );
 
