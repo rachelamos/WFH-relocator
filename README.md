@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# WFH-Relocator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Value Add Proposal
 
-## Available Scripts
+With working remotely becoming an increasingly popular and at times necessary aspect of employment, people are likely to reconsider their options on where to live. This application allows users to search cities in the USA and view aggregated stats regarding cost-of-living and broadband internet availability.
 
-In the project directory, you can run:
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This application uses a full MERN (Mongo Express React Node) stack. It's deployed via Heroku with a connected MongoDB-Atlas database, with database calls running via Axios. It also employs the NPM package ReCharts for generating onscreen charts as well as Bootstrap for mobile-responsive styling. Broadband data was sourced from broadbandnow.com.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Roles
 
-### `npm test`
+* Rachel Amos - React components, cost-of-living data collection, Mongoose setup, Heroku deployment, recharcts implementation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Daniel Boren - Broadband data collection, search functionality within react components, routing and database functions
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## MVP
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Phase 1
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Currently the app allows users to search any city currently loaded to the connected database. Upon typing a valid city name and clicking the search button the stats (CityWindow.js) and chart (Rechart/index.js) components will render below the search bar. The following stats are stored and renderable for each city.
 
-### `npm run eject`
+- Number of broadband providers
+- Number of available broadband plans
+- Highest available broadband speed
+- Average broadband plan price
+- Cost of living index
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The Rechart component renders the same numeric data as a bar graph while also rendering the averaged cost-of-living, provider count, and average plan price of all cities in the database so users can compare that to the searched city's stats.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![App rendering a city's info after search](images\WFHRscreencap.JPG)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Phase 2 (future developement)
 
-## Learn More
+Implementing user authentication. This would allow users to create their own account and save searched cities to a personal collection of cities of interest. Recharts would then be used to display multiple cities' charts side-by-side for easier comparison.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Login page wireframe](images\LoginWireframe.JPG)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+![Signup modal wireframe](images\SignupWireframe.JPG)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Phase 3 (future development)
 
-### Analyzing the Bundle Size
+Implementing onscreen map and searchability by values other than city name. This would include being able to search based on a threshold (such as max COL index or minimum top broadband speed) and view multiple resulting cities.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Image explaining potential future functionality](images\FutureDevScreencap.JPG)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Demo
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+WFH-Relocator is deployed via [Heroku](https://ancient-hollows-66162.herokuapp.com/) and it's repository can be found on [GitHub](https://github.com/rachelamos/WFH-relocator).
