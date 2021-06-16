@@ -30,23 +30,23 @@ Currently the app allows users to search any city currently loaded to the connec
 
 The Rechart component renders the same numeric data as a bar graph while also rendering the averaged cost-of-living, provider count, and average plan price of all cities in the database so users can compare that to the searched city's stats.
 
-![App rendering a city's info after search](images\WFHRscreencap.JPG)
+![App rendering a city's info after search](https://github.com/rachelamos/WFH-relocator/blob/main/images/WFHRscreencap.JPG?raw=true)
 
 
 ### Phase 2 (future developement)
 
 Implementing user authentication. This would allow users to create their own account and save searched cities to a personal collection of cities of interest. Recharts would then be used to display multiple cities' charts side-by-side for easier comparison.
 
-![Login page wireframe](images\LoginWireframe.JPG)
+![Login page wireframe](https://github.com/rachelamos/WFH-relocator/blob/main/images/LoginWireframe.JPG?raw=true)
 
 
-![Signup modal wireframe](images\SignupWireframe.JPG)
+![Signup modal wireframe](https://github.com/rachelamos/WFH-relocator/blob/main/images/SignupWireframe.JPG?raw=true)
 
 ### Phase 3 (future development)
 
 Implementing onscreen map and searchability by values other than city name. This would include being able to search based on a threshold (such as max COL index or minimum top broadband speed) and view multiple resulting cities.
 
-![Image explaining potential future functionality](images\FutureDevScreencap.JPG)
+![Image explaining potential future functionality](https://github.com/rachelamos/WFH-relocator/blob/main/images/FutureDevScreencap.JPG?raw=true)
 
 
 ## Demo
